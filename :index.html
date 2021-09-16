@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Website Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href=":index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="AboutMe.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                        <a href="VirtualTheatricality.html">Virtual Theatricality</a>
+                    </div>
+                
+                <div class="nav-link-wrapper">
+                    <a href="SmoothieMoves.html">Smoothie Moves</a>
+                </div>
+                        
+                <div class="nav-link-wrapper">
+                    <a href="Resume.html">Resume</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                        <a href="ContactMe.html">Contact Me</a>
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>ARIEL QUINAIN</div>   
+                </div> 
+            </div>
+
+        </div>
+            <div class="content-wrapper">
+
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                    
+                        <div class= "portfolio-img-background" style = "background-image:url(images/virtualTheatricality.jpeg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a href= "VirtualTheatricality.html">
+                                <img src="images/logos/virtTheatreIcon.png"  >
+                                </a>
+                            </div>
+
+                            <div class="subtitle">
+                            Using Unity3D, I combined my two passions, coding and theatre, to create a virtual theatre.
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                    
+                        <div class= "portfolio-img-background" style = "background-image:url(images/smoothieMoves.jpeg)"></div>
+                            
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <a href= "SmoothieMoves.html">
+                                    <img src="images/logos/smoothie_MustAttributeIconixar.png" >
+                                    </a> 
+                                </div>
+    
+                                <div class="subtitle">
+                                    A Game Development project, a time management smoothie tender game developed in Unity3D.
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                    
+                            <div class= "portfolio-img-background" style = "background-image:url(images/virtualResume.jpeg)"></div>
+                                
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <a href= "Resume.html">
+                                    <img src="images/logos/resumeIcon.png" >
+                                    </a>
+                                </div>
+        
+                                <div class="subtitle">
+                                    Walk through my professional experience in my virtual resume!
+                                </div>
+                                
+                            </div>
+                    
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () =>{
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () =>{
+            //console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+
+</script>
+</html>

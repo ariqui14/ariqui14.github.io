@@ -1,0 +1,21 @@
+﻿TODOS
+
+1. Build the project
+    -creating the golder
+    -adding the files
+    -connecting
+
+2. Navbar
+    -2 links and a name
+
+3. Portfolio item grid
+    -images
+    -titles
+    -descriptions
+    -animations
+    -javascript
+
+4. About page
+    -image
+    -split column layout
+    -content
